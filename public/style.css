@@ -1,0 +1,626 @@
+@font-face {
+    font-family: projet;
+    src: url('../public/src/font/Sancoale\ Softened\ Bold.ttf');
+}
+
+
+
+body {
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+/* heaaaaaaaadeeeeeeeeeeeeeeeeeeeeeeeeeer */
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 0;
+    background-image: linear-gradient( #695aa6, white );
+    background-image: url(../image/header.png);
+    background-position: center;
+    background-position: 35% top ;
+    background-size: 2000px;
+    color: white;
+}
+
+
+#h1{
+    font-size: 62px;
+    margin-bottom: 8px;
+    font-family: projet;
+    color: #333;
+}
+/* au lieu de vérifier la taille de la police en fonction des éléments parents, il vérifie en fonction de l'élément racine. L'élément racine est la balise .  */
+/* en clair pas trop compris mais ça fonctionne au lieu de mettre en px ou % rem fonctionne apparement c'est a peu près 16 px 1 rem */
+#web{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 2%;
+    color: #333;
+}
+
+.boutton{
+    padding: 16px 36px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #695aa6;
+    border: none;
+    border-radius: 25px;
+}
+/* CHUPI CHUPI CHUPA CHUPA */
+.about{
+    padding: 2%;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    text-align: left;
+    flex-wrap: wrap; 
+}
+
+
+.about-image {
+    max-width: 600px; 
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    height: auto;
+}
+
+.about-me{
+
+    max-width: 600px; 
+}
+
+.bouttonun{
+    padding: 8px 16px;
+    background-color: white;
+    color: #aea7ce;
+    border: 1px solid #aea7ce;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    width: auto;
+}
+
+
+#titre{
+    color: gray;
+    font-size: large;
+    margin-bottom: -3%;
+}
+
+#titreun{
+    font-size: xxx-large;
+    margin-bottom: 3%;
+    color: #695aa6 ;
+    font-family: projet;
+}
+
+.about-me p{
+    font-size: 20px;
+    color: gray;
+    opacity: 50%;
+}
+/* service seeeeeeeexxxxxtiooooooooon */
+
+.service {
+    padding: 48px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+#titredeux{
+    font-size: 40px;
+    margin-bottom: 2%;
+    font-family: projet;
+    color: #695aa6;
+}
+
+.servicecarre{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.service-image{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    margin: 28px;
+    background-color: white;
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+}
+
+.service-image img{
+    margin-bottom: 1rem;
+    width: 80px;
+    height: 80px;
+
+}
+
+#what{
+    color: gray;
+    font-size: large;
+    margin-bottom: -1%;
+}
+
+.service h3 { 
+    color: #685aa7;
+}
+
+/* section portfolio */
+.portfolio {
+    padding: 3rem 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: projet;
+    color: #685aa7
+}
+/* gap est une commande pour separer les elements vu que margin defois a une limite le gap peut regler ce probleme  */
+.blcportfolio{
+    display: flex;
+    gap: 1.5rem;            
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+.how{
+    color: gray;
+    font-size: large;
+    margin-bottom: -1%;
+}
+
+/* Pricing Section */
+
+
+.pricing {
+    padding: 4rem 0;
+    background-color: #fff;
+    text-align: center;
+    
+}
+
+.pricing h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: projet;
+    color: #685aa7;
+}
+
+.pricingun {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.pricing-image {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+
+.pricing img {
+    margin-bottom: 1rem;
+    width: 60px;
+    height: 60px;
+}
+
+.pricing h3 {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+    color: #685aa7;
+    font-family: projet;
+}
+
+.price{
+    font-size: 35px;
+    color: black;
+    margin: 1rem 0;
+    font-family: projet;
+}
+
+.subscribe{
+    padding: 8px 16px;
+    background-color: #685aa7;
+    color: white;
+    border: 1px solid #aea7ce;
+    font-size: 20px;
+    font-weight: bolder;
+    width: auto;
+}
+
+/* hire section  */
+
+.hire {
+    padding: 1rem 0;
+    background-color: #685aa7;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hire h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+    margin-left: 10%;
+    font-family: projet;
+}
+
+.hire p {
+    margin-bottom: 1.5rem;
+    margin-left: 11%;
+}
+
+.bouttonhire{
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: #383838;
+    background-color: white;
+    border: none;
+    display: block;
+    margin: 1.5rem auto 0;
+    font-family: projet;
+}
+/* testmonial section */
+
+.testimonial {
+    padding: 4rem 0;
+    background-color: white;
+    text-align: center;
+}
+
+.testimonial h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #685aa7;
+    font-family: projet;
+}
+
+.testimonial p{
+    color: gray;
+}
+
+.testimonialun {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+
+.testi-image {
+    text-align: center;
+    max-width: 250px;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    
+}
+
+
+.testi-image img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #685aa7; 
+}
+
+
+.testi-nom {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.testi-job {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 1rem;
+}
+
+.testi-text {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Blog Section */
+.blog {
+    padding: 2rem ;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blog h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: projet;
+    color: #685aa7;
+}
+
+.blogun, .blogdeux {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.blogun {
+    max-width: 300px;
+    text-align: left;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+.blogdeux{
+    max-width: 300px;
+    text-align: left;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+
+.blogun, .blogdeux a{
+    text-decoration: none;
+}
+
+.blogun img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.blogdeux img{
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.blogun h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color:#685aa7;
+    font-family: projet;
+}
+
+.blogdeux h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color:#685aa7;
+    font-family: projet;
+}
+
+/* Contact Me Section */
+.contact-me {
+    padding: 4rem;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: projet;
+    color: #685aa7;
+}
+
+.contact-me p{
+    font-size: large;
+    color: gray;
+    margin-bottom: -1%;
+}
+
+.contact button{
+    background-color: white;
+    color: #685aa7;
+    border: 1px solid ;
+    border-radius: 5px solid #685aa7;
+    border-radius: 5px;
+    font-family: projet;
+    margin-top: 2%;
+}
+
+.contact {
+    max-width: 800px;
+}
+
+.contact textarea {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid gray;
+    height: 120px;
+    margin-bottom: 1rem;
+    width: 800px;
+}
+
+.nouille{
+   margin-right: 55%;
+}
+
+
+/* Footer */
+footer {
+    padding: 1.5rem;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.reseaux .circle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reseaux .circle:hover {
+    background-color: white;
+}
+
+/* RESPONSIVE */
+
+/* TABLET ET ORDI PORTABLE JE SAIS PAS PK J'ECRIS EN MAJ */
+@media (max-width: 1024px) {
+    #h1 {
+        font-size: 48px;
+    }
+
+    .about, .service, .portfolio, .pricing, .hire, .testimonial, .blog, .contact-me {
+        padding: 2rem 1rem;
+    }
+
+    .service-image, .pricing-image, .testi-image {
+        width: 200px;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .testimonialun, .servicecarre, .blcportfolio, .pricingun, .blogun {
+        gap: 1rem;
+    }
+
+    .about-image, .about-me {
+        max-width: 90%;
+    }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+    .header {
+        padding: 60px 0;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    #h1 {
+        font-size: 36px;
+    }
+
+    #web {
+        font-size: 1.2rem;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .servicecarre, .blcportfolio, .testimonialun, .pricingun, .blogun {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-image, .pricing-image, .testi-image {
+        width: 100%;
+        max-width: 250px;
+    }
+}
+
+/* MOBILE L */
+@media (max-width: 480px) {
+    #h1 {
+        font-size: 28px;
+    }
+
+    #web {
+        font-size: 1rem;
+    }
+
+    .boutton {
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+
+    .about-image, .about-me {
+        max-width: 100%;
+    }
+
+    .service-image, .pricing-image, .testi-image, .blogun {
+        width: 100%;
+        max-width: 300px;
+        padding: 1rem;
+    }
+
+    .hire h2 {
+        font-size: 1.8rem;
+        margin-left: 0;
+    }
+
+    .hire {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .portfolio h2, .pricing h2, .testimonial h2, .blog h2, .contact-me h2 {
+        font-size: 2rem;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .subscribe, .bouttonhire {
+        font-size: 16px;
+        padding: 0.5rem 1rem;
+    }
+}
+
